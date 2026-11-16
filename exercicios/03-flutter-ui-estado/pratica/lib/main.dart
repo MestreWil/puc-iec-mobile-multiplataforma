@@ -18,7 +18,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final prefs = await SharedPreferences.getInstance();
 
-  final firebaseOptions = DefaultFirebaseOptions.currentPlatform;
+  const firebaseOptions = DefaultFirebaseOptions.currentPlatform;
   if (firebaseOptions.apiKey.isNotEmpty &&
       firebaseOptions.appId.isNotEmpty &&
       firebaseOptions.messagingSenderId.isNotEmpty &&
